@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simulasi Kredit Bunga Tetap"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="1000"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lakukan simulasi pinjaman anda dengan perhitungan bunga flat."
+        android:textColor="#5E5606"
+        android:layout_marginBottom="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Pinjaman"/>
+    <EditText
+        android:id="@+id/jumlah_pinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dalam Rupiah..."
+        android:layout_marginBottom="20dp"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lama Pinjaman"/>
+    <EditText
+        android:id="@+id/lama_pinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Dalam Bulan..."
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bunga Pinjaman"/>
+    <EditText
+        android:id="@+id/bunga_pinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberDecimal"
+        android:hint="Dalam prosentase per tahun"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perhitungan Bunga"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="1000"
+        android:text="Flat/Tetap"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btn_kalkulasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="30dp"
+        android:onClick="calculate"
+        android:text="Kalkulasi"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="1000"
+        android:textSize="20dp"
+        android:text="Angsuran Anda" />
+    <TextView
+        android:id="@+id/angsuran_pokok_per_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angsuran Pokok per Bulan: Rp. -, 00"/>
+    <TextView
+        android:id="@+id/angsuran_bunga_per_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angsuran Bunga per Bulan: Rp. -, 00"/>
+    <TextView
+        android:id="@+id/total_angsuran_per_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="1000"
+        android:text="Total Angsuran per Bulan: Rp. -, 00"/>
+</LinearLayout>
